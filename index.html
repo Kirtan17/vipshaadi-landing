@@ -42,6 +42,49 @@ input:focus,select:focus,button:focus-visible,a:focus-visible{outline:2px solid 
  .sticky-cta .cta{height:52px;font-size:15px}
  body{padding-bottom:84px}
  article[aria-label="Preview of the parent summary"]{transform:none!important;padding:24px!important}
+ /* Mobile: tighter gutters and type */
+ header>div{padding:14px 16px!important}
+ section{padding-left:16px!important;padding-right:16px!important}
+ footer{padding:24px 16px!important}
+ h1{font-size:2rem!important;line-height:1.2!important}
+ h2{font-size:1.6rem!important}
+ section p[style*="font-size: 19px"]{font-size:17px!important}
+ /* Hero: bring the form up right after the intro */
+ section#top>div{flex-direction:column;align-items:stretch!important;gap:0!important}
+ section#top>div>div:first-child{display:contents}
+ section#top>div>div:first-child>p:first-child{order:1;font-size:12px!important}
+ section#top h1{order:2}
+ section#top>div>div:first-child>p:nth-of-type(2){order:3;margin-top:16px!important}
+ section#top>div>div:first-child>div:not(.trust){display:none!important}
+ #consult{order:4;margin-top:24px;border-radius:16px!important;box-shadow:0 12px 32px rgba(28,27,41,.08)!important}
+ section#top .trust{order:5;margin-top:24px!important;gap:8px!important}
+ section#top figure{order:6;margin-top:24px!important;border-radius:16px!important}
+ .badge{padding:10px 14px;font-size:14px}
+ /* Grids collapse to one column */
+ [style*="auto-fit"]{grid-template-columns:minmax(0,1fr)!important;gap:16px!important}
+ #who ul{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}
+ #who ul span{padding:12px!important;font-size:14px;line-height:1.35}
+ #who>div{gap:32px!important}
+ section div[style*="padding: 32px"]{padding:24px!important}
+ #how ol{gap:28px!important}
+ /* Comparison table becomes stacked cards */
+ table,tbody,tr,th,td{display:block;width:auto!important}
+ table{min-width:0!important}
+ thead{display:none}
+ div[style*="overflow-x"]{border:0!important;overflow:visible!important}
+ tbody tr{border:1px solid #E0E0E0;border-radius:14px;overflow:hidden;margin-bottom:12px}
+ tbody th{padding:14px 16px 6px!important;border:0!important;font-size:15px}
+ tbody td{padding:6px 16px 12px!important;border:0!important;font-size:15px}
+ tbody td:last-child{padding:12px 16px 14px!important}
+ tbody td::before{display:block;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#6B6A78;margin-bottom:2px}
+ tbody td:nth-of-type(1)::before{content:"Matrimony apps"}
+ tbody td:nth-of-type(2)::before{content:"VIP Shaadi";color:#5B318B}
+ /* Buttons go full width */
+ #parents button[style*="min-height: 52px"],section[style*="text-align: center"] a{flex:1 1 100%;justify-content:center}
+ section[style*="text-align: center"] a{box-sizing:border-box}
+ #parents>div{gap:40px!important}
+ summary{font-size:16px!important}
+ details{padding:18px 0!important}
 }
 </style>
 </head>
